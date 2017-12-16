@@ -88,7 +88,7 @@ scatter1
 
 # scatter2 - A scatterplot that includes industry trends for the expenses~revenue relationship
 
-plot + 
+scatter2 <- plot + 
   geom_point() +
   geom_smooth(fill=NA) +
   ggtitle("Expenses vs Revenue (by Industry)") +
@@ -96,6 +96,7 @@ plot +
   scale_y_continuous(labels = comma) +
   coord_cartesian(ylim=c(0,10000000))
   
+scatter2
 
 # box1 - Boxplots showing growth by industry
 
