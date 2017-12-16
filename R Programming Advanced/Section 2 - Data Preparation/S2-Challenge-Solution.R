@@ -72,6 +72,7 @@ fin[is.na(fin$Expenses),"Expenses"] <- fin[is.na(fin$Expenses),"Revenue"] - fin[
 #==================== Visualizations ========================
 #install.packages(ggplot2)
 library(ggplot2)
+library(scales)
 
 plot <- ggplot(data=fin, aes(x=Revenue, y=Expenses, color=Industry))
 
